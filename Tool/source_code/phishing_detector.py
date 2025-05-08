@@ -8,7 +8,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import classification_report, accuracy_score
 
 # Load dataset
-df = pd.read_csv("phishing_emails.csv")  # Rename if needed
+df = pd.read_csv("phishing.csv")  
 
 # Basic text preprocessing
 def clean_text(text):
