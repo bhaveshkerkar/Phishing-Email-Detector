@@ -1,1 +1,6 @@
-df = pd.read_csv("phishing.csv")
+EmailText ,Label 
+Urgent! Your account has been ,1
+suspended. ,
+Meeting is scheduled at 4 PM today. ,0
+You won a lottery! Click the link to claim. ,1
+Here is the monthly report you requested. ,0
