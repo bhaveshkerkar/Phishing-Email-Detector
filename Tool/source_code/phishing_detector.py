@@ -1,5 +1,3 @@
-# phishing_detector.py
-
 import pandas as pd
 import string
 from sklearn.model_selection import train_test_split
@@ -8,7 +6,9 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import classification_report, accuracy_score
 
 # Load dataset
-df = pd.read_csv("phishing.csv")  
+df = pd.read_csv("phishing.csv", encoding='utf-8')
+df.columns = df.columns.str.strip()
+df.dropna(inplace=True)# Remove extra spaces just in case
 
 # Basic text preprocessing
 def clean_text(text):
@@ -16,11 +16,9 @@ def clean_text(text):
     text = text.translate(str.maketrans('', '', string.punctuation))
     return text
 
-df['text'] = df['text'].astype(str).apply(clean_text)
-
-# Split data
-X = df['text']
-y = df['label']  # Make sure column is named 'label' (0: legit, 1: phishing)
+df['EmailText'] = df['EmailText'].astype(str).apply(clean_text)
+X = df['EmailText']
+y = df['Label']  # Make sure column is named 'label' (0: legit, 1: phishing)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
