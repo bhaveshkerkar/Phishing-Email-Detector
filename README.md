@@ -12,3 +12,5 @@ Phishing emails are a major threat to users and organizations. This tool detects
 ```bash
 git clone https://github.com/bhaveshkerkar/Phishing-Email-Detector
 cd Phishing-Email-Detector/tool/source_code
+## 🎥 Demo Video
+[Watch on YouTube](https://youtu.be/3OvI5H3TyZ8)
