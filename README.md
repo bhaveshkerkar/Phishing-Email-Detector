@@ -16,7 +16,6 @@ Developed as part of the Digisuraksha Cybersecurity Internship (2025).
 ✨ Lightweight, fast, and accurate
 ✨ Detects phishing patterns using text analysis
 
-<p align="center"> <img src="https://media.giphy.com/media/QAsBwSjx9zVKoGp9nr/giphy.gif" width="300" /> </p>
 🚀 Tech Stack
 <p align="center">
 
