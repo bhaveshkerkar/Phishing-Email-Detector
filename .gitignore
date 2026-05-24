@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Model file (large — regenerate with train_model.py)
+backend/model/phishing_model.pkl
+
+# Node
+frontend/node_modules/
+frontend/build/
+
+# Dataset (regenerate with generate_dataset.py)
+dataset/phishing_dataset.csv
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
